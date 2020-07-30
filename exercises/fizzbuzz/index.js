@@ -12,6 +12,25 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+
+
+function fizzBuzz(n) {
+
+
+
+    // if(!n) return;
+    // fizzBuzz(n-1);
+    // var s = ((n%3) ? '':'fizz')+((n%5) ? '':'buzz');
+    // console.log(s || n);
+
+
+  for(i=1;i<n;i++){
+   fizz = !(i%3) ? "fizz" : '';
+   fizz += !(i%5) ? "buzz" : '';
+   console.log(fizz || i)
+  }
+
+}
+
 
 module.exports = fizzBuzz;
